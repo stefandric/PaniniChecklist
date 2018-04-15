@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9076FABE20828EE1000DD548 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9076FABD20828EE1000DD548 /* Prefs.swift */; };
+		9076FAC120829310000DD548 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9076FABF20829310000DD548 /* StickerCollectionViewCell.swift */; };
+		9076FAC220829310000DD548 /* StickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9076FAC020829310000DD548 /* StickerCollectionViewCell.xib */; };
+		909F8CAD208342900016B0DA /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F8CAC208342900016B0DA /* Sticker.swift */; };
+		90D183222080243900A64585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D183212080243900A64585 /* AppDelegate.swift */; };
+		90D183272080243900A64585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D183252080243900A64585 /* Main.storyboard */; };
+		90D183292080243900A64585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D183282080243900A64585 /* Assets.xcassets */; };
+		90D1832C2080243900A64585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D1832A2080243900A64585 /* LaunchScreen.storyboard */; };
+		90D183372080243900A64585 /* PaniniChecklistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D183362080243900A64585 /* PaniniChecklistTests.swift */; };
+		90D183422080243900A64585 /* PaniniChecklistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D183412080243900A64585 /* PaniniChecklistUITests.swift */; };
+		90D183502080246C00A64585 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1834F2080246C00A64585 /* ChecklistViewController.swift */; };
+		90FD659D2083928000D9C215 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD659C2083928000D9C215 /* ChartsViewController.swift */; };
+		AE6909E3DB9DC99AC8301A51 /* Pods_PaniniChecklist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464B190F1BA25A23687EDF0B /* Pods_PaniniChecklist.framework */; };
+		CC98551A39C5068044B386E0 /* Pods_PaniniChecklistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4A632114865CE8FAF296BA /* Pods_PaniniChecklistUITests.framework */; };
+		D26B4F3D2A434770C7C0BF9B /* Pods_PaniniChecklist_PaniniChecklistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A52B080406D20B1B19E75A4 /* Pods_PaniniChecklist_PaniniChecklistTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90D183332080243900A64585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D183162080243900A64585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D1831D2080243900A64585;
+			remoteInfo = PaniniChecklist;
+		};
+		90D1833E2080243900A64585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D183162080243900A64585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D1831D2080243900A64585;
+			remoteInfo = PaniniChecklist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		464B190F1BA25A23687EDF0B /* Pods_PaniniChecklist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaniniChecklist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4C7A38D12B049C1A067E83 /* Pods-PaniniChecklistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaniniChecklistUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaniniChecklistUITests/Pods-PaniniChecklistUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B4A632114865CE8FAF296BA /* Pods_PaniniChecklistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaniniChecklistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6412E66E033E7A072B8B1EC3 /* Pods-PaniniChecklistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaniniChecklistUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaniniChecklistUITests/Pods-PaniniChecklistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DE7664CD859C649C23C5AE8 /* Pods-PaniniChecklist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaniniChecklist.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaniniChecklist/Pods-PaniniChecklist.release.xcconfig"; sourceTree = "<group>"; };
+		8A52B080406D20B1B19E75A4 /* Pods_PaniniChecklist_PaniniChecklistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaniniChecklist_PaniniChecklistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF97781215AF51BC53B718D /* Pods-PaniniChecklist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaniniChecklist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaniniChecklist/Pods-PaniniChecklist.debug.xcconfig"; sourceTree = "<group>"; };
+		9076FABD20828EE1000DD548 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		9076FABF20829310000DD548 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		9076FAC020829310000DD548 /* StickerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		909F8CAC208342900016B0DA /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		90D1831E2080243900A64585 /* PaniniChecklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaniniChecklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D183212080243900A64585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90D183262080243900A64585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90D183282080243900A64585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90D1832B2080243900A64585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90D1832D2080243900A64585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D183322080243900A64585 /* PaniniChecklistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaniniChecklistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D183362080243900A64585 /* PaniniChecklistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaniniChecklistTests.swift; sourceTree = "<group>"; };
+		90D183382080243900A64585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D1833D2080243900A64585 /* PaniniChecklistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaniniChecklistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D183412080243900A64585 /* PaniniChecklistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaniniChecklistUITests.swift; sourceTree = "<group>"; };
+		90D183432080243900A64585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D1834F2080246C00A64585 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		90FD659C2083928000D9C215 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		960E1970B42CC1EB93A2354C /* Pods-PaniniChecklist-PaniniChecklistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaniniChecklist-PaniniChecklistTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaniniChecklist-PaniniChecklistTests/Pods-PaniniChecklist-PaniniChecklistTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF9018DAE95E8FBCC8CCD400 /* Pods-PaniniChecklist-PaniniChecklistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaniniChecklist-PaniniChecklistTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaniniChecklist-PaniniChecklistTests/Pods-PaniniChecklist-PaniniChecklistTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90D1831B2080243900A64585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6909E3DB9DC99AC8301A51 /* Pods_PaniniChecklist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1832F2080243900A64585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26B4F3D2A434770C7C0BF9B /* Pods_PaniniChecklist_PaniniChecklistTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1833A2080243900A64585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC98551A39C5068044B386E0 /* Pods_PaniniChecklistUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90D183152080243900A64585 = {
+			isa = PBXGroup;
+			children = (
+				90D183202080243900A64585 /* PaniniChecklist */,
+				90D183352080243900A64585 /* PaniniChecklistTests */,
+				90D183402080243900A64585 /* PaniniChecklistUITests */,
+				90D1831F2080243900A64585 /* Products */,
+				CC17ACAF3C974E1E89DFBD8D /* Pods */,
+				9F0387D2AA28630A3B48A51D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		90D1831F2080243900A64585 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D1831E2080243900A64585 /* PaniniChecklist.app */,
+				90D183322080243900A64585 /* PaniniChecklistTests.xctest */,
+				90D1833D2080243900A64585 /* PaniniChecklistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90D183202080243900A64585 /* PaniniChecklist */ = {
+			isa = PBXGroup;
+			children = (
+				90D183212080243900A64585 /* AppDelegate.swift */,
+				90D183252080243900A64585 /* Main.storyboard */,
+				9076FABF20829310000DD548 /* StickerCollectionViewCell.swift */,
+				9076FAC020829310000DD548 /* StickerCollectionViewCell.xib */,
+				90D183282080243900A64585 /* Assets.xcassets */,
+				90D1832A2080243900A64585 /* LaunchScreen.storyboard */,
+				90D1832D2080243900A64585 /* Info.plist */,
+				90D1834F2080246C00A64585 /* ChecklistViewController.swift */,
+				90FD659C2083928000D9C215 /* ChartsViewController.swift */,
+				9076FABD20828EE1000DD548 /* Prefs.swift */,
+				909F8CAC208342900016B0DA /* Sticker.swift */,
+			);
+			path = PaniniChecklist;
+			sourceTree = "<group>";
+		};
+		90D183352080243900A64585 /* PaniniChecklistTests */ = {
+			isa = PBXGroup;
+			children = (
+				90D183362080243900A64585 /* PaniniChecklistTests.swift */,
+				90D183382080243900A64585 /* Info.plist */,
+			);
+			path = PaniniChecklistTests;
+			sourceTree = "<group>";
+		};
+		90D183402080243900A64585 /* PaniniChecklistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90D183412080243900A64585 /* PaniniChecklistUITests.swift */,
+				90D183432080243900A64585 /* Info.plist */,
+			);
+			path = PaniniChecklistUITests;
+			sourceTree = "<group>";
+		};
+		9F0387D2AA28630A3B48A51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				464B190F1BA25A23687EDF0B /* Pods_PaniniChecklist.framework */,
+				8A52B080406D20B1B19E75A4 /* Pods_PaniniChecklist_PaniniChecklistTests.framework */,
+				5B4A632114865CE8FAF296BA /* Pods_PaniniChecklistUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC17ACAF3C974E1E89DFBD8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DF97781215AF51BC53B718D /* Pods-PaniniChecklist.debug.xcconfig */,
+				7DE7664CD859C649C23C5AE8 /* Pods-PaniniChecklist.release.xcconfig */,
+				960E1970B42CC1EB93A2354C /* Pods-PaniniChecklist-PaniniChecklistTests.debug.xcconfig */,
+				BF9018DAE95E8FBCC8CCD400 /* Pods-PaniniChecklist-PaniniChecklistTests.release.xcconfig */,
+				4C4C7A38D12B049C1A067E83 /* Pods-PaniniChecklistUITests.debug.xcconfig */,
+				6412E66E033E7A072B8B1EC3 /* Pods-PaniniChecklistUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90D1831D2080243900A64585 /* PaniniChecklist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D183462080243900A64585 /* Build configuration list for PBXNativeTarget "PaniniChecklist" */;
+			buildPhases = (
+				6BE426CBB8F3EC4E00B39A80 /* [CP] Check Pods Manifest.lock */,
+				90D1831A2080243900A64585 /* Sources */,
+				90D1831B2080243900A64585 /* Frameworks */,
+				90D1831C2080243900A64585 /* Resources */,
+				F9CD5C10FBDD921B7B772ED2 /* [CP] Embed Pods Frameworks */,
+				ACF8057D4DC590BB614D1F6D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaniniChecklist;
+			productName = PaniniChecklist;
+			productReference = 90D1831E2080243900A64585 /* PaniniChecklist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90D183312080243900A64585 /* PaniniChecklistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D183492080243900A64585 /* Build configuration list for PBXNativeTarget "PaniniChecklistTests" */;
+			buildPhases = (
+				37BB084F2E63EC4B6E879AA7 /* [CP] Check Pods Manifest.lock */,
+				90D1832E2080243900A64585 /* Sources */,
+				90D1832F2080243900A64585 /* Frameworks */,
+				90D183302080243900A64585 /* Resources */,
+				C995C779E8781062FB1E9813 /* [CP] Embed Pods Frameworks */,
+				B39CFC2536C988C543EECABB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D183342080243900A64585 /* PBXTargetDependency */,
+			);
+			name = PaniniChecklistTests;
+			productName = PaniniChecklistTests;
+			productReference = 90D183322080243900A64585 /* PaniniChecklistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90D1833C2080243900A64585 /* PaniniChecklistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D1834C2080243900A64585 /* Build configuration list for PBXNativeTarget "PaniniChecklistUITests" */;
+			buildPhases = (
+				AE69B3C3680A210024297B50 /* [CP] Check Pods Manifest.lock */,
+				90D183392080243900A64585 /* Sources */,
+				90D1833A2080243900A64585 /* Frameworks */,
+				90D1833B2080243900A64585 /* Resources */,
+				A13DF86AC34AE5F8F6A56814 /* [CP] Embed Pods Frameworks */,
+				011EFE0A897EE8D3A4AE3A43 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D1833F2080243900A64585 /* PBXTargetDependency */,
+			);
+			name = PaniniChecklistUITests;
+			productName = PaniniChecklistUITests;
+			productReference = 90D1833D2080243900A64585 /* PaniniChecklistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90D183162080243900A64585 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = stefandric;
+				TargetAttributes = {
+					90D1831D2080243900A64585 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					90D183312080243900A64585 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 90D1831D2080243900A64585;
+					};
+					90D1833C2080243900A64585 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 90D1831D2080243900A64585;
+					};
+				};
+			};
+			buildConfigurationList = 90D183192080243900A64585 /* Build configuration list for PBXProject "PaniniChecklist" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90D183152080243900A64585;
+			productRefGroup = 90D1831F2080243900A64585 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D1831D2080243900A64585 /* PaniniChecklist */,
+				90D183312080243900A64585 /* PaniniChecklistTests */,
+				90D1833C2080243900A64585 /* PaniniChecklistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90D1831C2080243900A64585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1832C2080243900A64585 /* LaunchScreen.storyboard in Resources */,
+				90D183292080243900A64585 /* Assets.xcassets in Resources */,
+				9076FAC220829310000DD548 /* StickerCollectionViewCell.xib in Resources */,
+				90D183272080243900A64585 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D183302080243900A64585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1833B2080243900A64585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		011EFE0A897EE8D3A4AE3A43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklistUITests/Pods-PaniniChecklistUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37BB084F2E63EC4B6E879AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaniniChecklist-PaniniChecklistTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BE426CBB8F3EC4E00B39A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaniniChecklist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A13DF86AC34AE5F8F6A56814 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklistUITests/Pods-PaniniChecklistUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACF8057D4DC590BB614D1F6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklist/Pods-PaniniChecklist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE69B3C3680A210024297B50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaniniChecklistUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39CFC2536C988C543EECABB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklist-PaniniChecklistTests/Pods-PaniniChecklist-PaniniChecklistTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C995C779E8781062FB1E9813 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklist-PaniniChecklistTests/Pods-PaniniChecklist-PaniniChecklistTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklist-PaniniChecklistTests/Pods-PaniniChecklist-PaniniChecklistTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CD5C10FBDD921B7B772ED2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklist/Pods-PaniniChecklist-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaniniChecklist/Pods-PaniniChecklist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90D1831A2080243900A64585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9076FABE20828EE1000DD548 /* Prefs.swift in Sources */,
+				90D183222080243900A64585 /* AppDelegate.swift in Sources */,
+				9076FAC120829310000DD548 /* StickerCollectionViewCell.swift in Sources */,
+				90FD659D2083928000D9C215 /* ChartsViewController.swift in Sources */,
+				90D183502080246C00A64585 /* ChecklistViewController.swift in Sources */,
+				909F8CAD208342900016B0DA /* Sticker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1832E2080243900A64585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D183372080243900A64585 /* PaniniChecklistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D183392080243900A64585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D183422080243900A64585 /* PaniniChecklistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90D183342080243900A64585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D1831D2080243900A64585 /* PaniniChecklist */;
+			targetProxy = 90D183332080243900A64585 /* PBXContainerItemProxy */;
+		};
+		90D1833F2080243900A64585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D1831D2080243900A64585 /* PaniniChecklist */;
+			targetProxy = 90D1833E2080243900A64585 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90D183252080243900A64585 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D183262080243900A64585 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90D1832A2080243900A64585 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D1832B2080243900A64585 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90D183442080243900A64585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90D183452080243900A64585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D183472080243900A64585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF97781215AF51BC53B718D /* Pods-PaniniChecklist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75Y7244A92;
+				INFOPLIST_FILE = PaniniChecklist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandric.PaniniChecklist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		90D183482080243900A64585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE7664CD859C649C23C5AE8 /* Pods-PaniniChecklist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75Y7244A92;
+				INFOPLIST_FILE = PaniniChecklist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandric.PaniniChecklist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		90D1834A2080243900A64585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960E1970B42CC1EB93A2354C /* Pods-PaniniChecklist-PaniniChecklistTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PaniniChecklistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandric.PaniniChecklistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaniniChecklist.app/PaniniChecklist";
+			};
+			name = Debug;
+		};
+		90D1834B2080243900A64585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9018DAE95E8FBCC8CCD400 /* Pods-PaniniChecklist-PaniniChecklistTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PaniniChecklistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandric.PaniniChecklistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaniniChecklist.app/PaniniChecklist";
+			};
+			name = Release;
+		};
+		90D1834D2080243900A64585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4C7A38D12B049C1A067E83 /* Pods-PaniniChecklistUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PaniniChecklistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandric.PaniniChecklistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaniniChecklist;
+			};
+			name = Debug;
+		};
+		90D1834E2080243900A64585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6412E66E033E7A072B8B1EC3 /* Pods-PaniniChecklistUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PaniniChecklistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefandric.PaniniChecklistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaniniChecklist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90D183192080243900A64585 /* Build configuration list for PBXProject "PaniniChecklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D183442080243900A64585 /* Debug */,
+				90D183452080243900A64585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D183462080243900A64585 /* Build configuration list for PBXNativeTarget "PaniniChecklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D183472080243900A64585 /* Debug */,
+				90D183482080243900A64585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D183492080243900A64585 /* Build configuration list for PBXNativeTarget "PaniniChecklistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1834A2080243900A64585 /* Debug */,
+				90D1834B2080243900A64585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D1834C2080243900A64585 /* Build configuration list for PBXNativeTarget "PaniniChecklistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1834D2080243900A64585 /* Debug */,
+				90D1834E2080243900A64585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90D183162080243900A64585 /* Project object */;
+}

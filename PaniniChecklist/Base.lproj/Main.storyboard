@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d0z-09-VKb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checklist View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChecklistViewController" customModule="PaniniChecklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bckgrnd" translatesAutoresizingMaskIntoConstraints="NO" id="Jys-HF-5rc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VNo-bK-bOz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FYX-KI-HzU">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Jys-HF-5rc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="40N-Ux-WJU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jys-HF-5rc" secondAttribute="bottom" id="5vC-4J-1eh"/>
+                            <constraint firstItem="VNo-bK-bOz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F5v-tL-hV2"/>
+                            <constraint firstItem="Jys-HF-5rc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GyE-70-WBV"/>
+                            <constraint firstItem="VNo-bK-bOz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JGV-E5-nSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VNo-bK-bOz" secondAttribute="trailing" id="LCI-OG-V7W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jys-HF-5rc" secondAttribute="trailing" id="Ofs-Ik-s3R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VNo-bK-bOz" secondAttribute="bottom" id="iCQ-I1-fxF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jGt-Yv-YCt">
+                        <barButtonItem key="leftBarButtonItem" title="0" id="Kiz-k4-7Ph">
+                            <color key="tintColor" red="0.38823529410000002" green="0.16078431369999999" blue="0.91372549020000005" alpha="1" colorSpace="deviceRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="charts" id="25f-U9-hD8">
+                            <connections>
+                                <action selector="statsItemTapped:" destination="BYZ-38-t0r" id="dQH-7H-yAE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectedStickers" destination="Kiz-k4-7Ph" id="M9t-LJ-E0w"/>
+                        <outlet property="stastBarItem" destination="25f-U9-hD8" id="PO0-sK-n7L"/>
+                        <outlet property="stickerCollection" destination="VNo-bK-bOz" id="Sjx-Sv-Mes"/>
+                        <segue destination="CmT-rL-6Td" kind="show" identifier="chartsSegue" id="Gbb-6h-3dS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="-102"/>
+        </scene>
+        <!--Charts-->
+        <scene sceneID="nhm-h2-1K9">
+            <objects>
+                <viewController title="Charts" id="CmT-rL-6Td" customClass="ChartsViewController" customModule="PaniniChecklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rxr-gi-L35">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhs-Bb-vdn" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-ro-1l4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.08235294118" green="0.52549019610000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uhs-Bb-vdn" firstAttribute="top" secondItem="iM6-ro-1l4" secondAttribute="bottom" id="81g-M0-NZy"/>
+                            <constraint firstItem="iM6-ro-1l4" firstAttribute="leading" secondItem="qS2-Mi-2Qg" secondAttribute="leading" id="BJx-HZ-RBf"/>
+                            <constraint firstItem="qS2-Mi-2Qg" firstAttribute="bottom" secondItem="uhs-Bb-vdn" secondAttribute="bottom" id="FG3-kP-GBD"/>
+                            <constraint firstItem="qS2-Mi-2Qg" firstAttribute="trailing" secondItem="iM6-ro-1l4" secondAttribute="trailing" id="Gki-kS-gEh"/>
+                            <constraint firstItem="iM6-ro-1l4" firstAttribute="top" secondItem="qS2-Mi-2Qg" secondAttribute="top" id="aO5-gD-Mto"/>
+                            <constraint firstItem="uhs-Bb-vdn" firstAttribute="top" secondItem="qS2-Mi-2Qg" secondAttribute="top" constant="50" id="jZH-sj-dnj"/>
+                            <constraint firstItem="uhs-Bb-vdn" firstAttribute="leading" secondItem="qS2-Mi-2Qg" secondAttribute="leading" id="njK-Vt-053"/>
+                            <constraint firstItem="qS2-Mi-2Qg" firstAttribute="trailing" secondItem="uhs-Bb-vdn" secondAttribute="trailing" id="vfH-1f-cTe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qS2-Mi-2Qg"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="uhs-Bb-vdn" id="d6p-H8-qgh"/>
+                        <outlet property="detailsLabel" destination="iM6-ro-1l4" id="jWD-B2-JD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7WO-o8-qhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2463" y="-102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uYr-yf-NeN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d0z-09-VKb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DcG-jZ-hSd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jzv-Ik-r1q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hd7-E2-KU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="-92.203898050974516"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bckgrnd" width="375" height="812"/>
+        <image name="charts" width="32" height="32"/>
+    </resources>
+</document>
