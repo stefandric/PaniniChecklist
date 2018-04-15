@@ -53,6 +53,7 @@ class ChartsViewController: UIViewController {
 
         chartView.animate(xAxisDuration: 1.0, easingOption: ChartEasingOption.easeInOutCirc)
         chartView.chartDescription = nil
+        chartView.holeColor = .black
         
         /*
          let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")

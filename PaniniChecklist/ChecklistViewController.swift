@@ -16,7 +16,6 @@ class ChecklistViewController: UIViewController, UICollectionViewDelegate, UICol
             stickerCollection.register(UINib.init(nibName: "StickerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "stickerCell")
             stickerCollection.delegate = self
             stickerCollection.dataSource = self
-            stickerCollection.alpha = 0.0
         }
     }
     private var collectedItems = 0
@@ -37,12 +36,8 @@ class ChecklistViewController: UIViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        UIView.animate(withDuration: 0.8, delay: 0.0, options: .curveLinear, animations: {
-            self.stickerCollection.alpha = 1.0
-        }) { (finished) in
-            
-        }
-
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         if !Prefs.isFirstTime {
             Prefs.isFirstTime = true
             addStickers()
@@ -52,8 +47,6 @@ class ChecklistViewController: UIViewController, UICollectionViewDelegate, UICol
         collectedItems = realm.objects(Sticker.self).filter("isSelected == true").count
         collectedStickers.title = "Collected: \(collectedItems)"
         duplicateItems = totalNumberOfDuplicates()
-        
-        
     }
     
     
